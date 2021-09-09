@@ -1,7 +1,7 @@
 FROM conanio/gcc7:1.34.0
 
 USER root
-
+COPY ./examples /home/conan/examples
 RUN apt-get -qq update \
     && apt-get -qq install -y --no-install-recommends \
        vim \
