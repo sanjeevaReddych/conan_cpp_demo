@@ -10,7 +10,7 @@ pipeline {
                    
                         echo "running conan"
                         sh '''
-                        	ll -ltr
+                        	ls -ltr
                            	cd examples/cmake_find_package/
 				mkdir build_linux
 				cd build_linux/
