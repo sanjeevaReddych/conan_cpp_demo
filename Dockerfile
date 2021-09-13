@@ -17,4 +17,4 @@ RUN conan profile update settings.compiler.libcxx=libstdc++11 default
 RUN conan config set general.revisions_enabled=True
 
 WORKDIR /home/conan
-COPY ./examples /home/conan/examples
+ADD ./examples /home/conan/examples
