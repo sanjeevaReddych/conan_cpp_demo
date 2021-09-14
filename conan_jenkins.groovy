@@ -4,7 +4,9 @@ pipeline {
       
     stages {
         stage('conan') {
-            steps {              
+            steps {      
+            sh 'ls -ltr'
+            sh 'pwd'        
 
                 script {
                    
