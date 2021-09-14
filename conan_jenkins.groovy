@@ -12,7 +12,7 @@ pipeline {
                         sh '''
                         	ls -ltr
                         	pwd
-                        	who
+                        	chmod -R 777 .
                         	
                            	cd examples/cmake_find_package/
 				mkdir -p build_linux
