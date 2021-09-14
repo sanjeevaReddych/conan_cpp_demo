@@ -12,6 +12,8 @@ pipeline {
                         sh '''
                         	ls -ltr
                         	pwd
+                        	who
+                        	
                            	cd examples/cmake_find_package/
 				mkdir -p build_linux
 				cd build_linux/
