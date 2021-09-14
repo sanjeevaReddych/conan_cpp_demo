@@ -14,7 +14,7 @@ pipeline {
                         sh '''
                         	ls -ltr
                            	cd examples/cmake_find_package/
-				mkdir build_linux
+				mkdir -p build_linux
 				cd build_linux/
 				conan install .. --profile ../../profiles/linux_gcc_7_release 
 				source activate.sh 
