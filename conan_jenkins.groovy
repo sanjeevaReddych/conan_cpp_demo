@@ -5,14 +5,13 @@ pipeline {
     stages {
         stage('conan') {
             steps {      
-            sh 'ls -ltr'
-            sh 'pwd'        
 
                 script {
                    
                         echo "running conan"
                         sh '''
                         	ls -ltr
+                        	pwd
                            	cd examples/cmake_find_package/
 				mkdir -p build_linux
 				cd build_linux/
