@@ -14,4 +14,5 @@ USER conan
 
 RUN conan profile new default --detect
 RUN conan profile update settings.compiler.libcxx=libstdc++11 default
-RUN conan config set general.revisions_enabled=False
+RUN conan config set general.revisions_enabled=True
+RUN conan config set general.sysrequires_sudo=True
