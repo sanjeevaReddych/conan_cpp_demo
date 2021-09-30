@@ -17,7 +17,8 @@ pipeline {
                            	cd examples/cmake_find_package/
 				mkdir -p build_linux
 				cd build_linux/
-				sudo conan install .. --profile ../../profiles/linux_gcc_7_release 
+				whoami
+				conan install .. --profile ../../profiles/linux_gcc_7_release 
 				source activate.sh 
 				cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_MODULE_PATH=$PWD
 				cmake --build .
